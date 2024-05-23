@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HortiFruti</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tropical Harvest</h1>
+            <nav id="nav-content">
+                <ul id="ul-content">
+                    <li><a href="/pages/home.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/gallery.html">Gallery</a></li>
+                </ul>                
+            </nav> 
+        </header>
+        <main>
+            <section class="left-column">
+                <img class="img-logo" src="/img/goiaba.jpg" alt="Goiaba">
+            </section>
+            <section class="right-column">
+                <img class="img-logo" src="/img/melancia.jpg" alt="Melancia">
+            </section>
+        </main>
+        <footer>
+            <p>Help - Assistance</p>
+        </footer>
+    </div>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="HortifrutiBot"
+      agent-id="YOUR-AGENT-ID"
+      language-code="pt-br"
+    ></df-messenger>
+</body>
+</html>
